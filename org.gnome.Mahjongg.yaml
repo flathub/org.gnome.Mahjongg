@@ -9,6 +9,7 @@ finish-args:
   - --socket=x11
   - --socket=wayland
   - --device=dri
+  - --metadata=X-DConf=migrate-path=/org/gnome/Mahjongg/
 
 modules:
   - name: gnome-mahjongg
@@ -16,7 +17,9 @@ modules:
     sources:
         - type: git
           url: https://gitlab.gnome.org/GNOME/gnome-mahjongg.git
-          tag: '3.33.90'
-          commit: '21a13625e2f8f24cc8c4fa6dde10cebad0786b71'
+          tag: '3.32.0'
+          commit: 'ab72d2b3f50f4d96e092c3afcb93c3e7d76bd3b5'
+        - type: patch
+          path: appdata.patch
 cleanup:
   - "/share/man"
