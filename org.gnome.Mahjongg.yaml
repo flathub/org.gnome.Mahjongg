@@ -19,5 +19,7 @@ modules:
           url: https://gitlab.gnome.org/GNOME/gnome-mahjongg.git
           tag: '3.34.0'
           commit: '8e63b5b86219151246a69a7e839d54d73028098a'
+        - type: patch
+          path: fe6baaead0ca0ba6ff4d600dc469398ed5b0f642.diff
 cleanup:
   - "/share/man"
