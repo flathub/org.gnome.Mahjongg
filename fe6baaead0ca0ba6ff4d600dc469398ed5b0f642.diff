@@ -1,0 +1,12 @@
+diff --git a/data/org.gnome.Mahjongg.appdata.xml.in b/data/org.gnome.Mahjongg.appdata.xml.in
+index f1547ad06d9ee12ef9cd27fece92d24e2d14922b..39cfdbf3afa36f4cb8a6c2f602f04b2ef7202455 100644
+--- a/data/org.gnome.Mahjongg.appdata.xml.in
++++ b/data/org.gnome.Mahjongg.appdata.xml.in
+@@ -27,6 +27,7 @@
+     </screenshot>
+   </screenshots>
+   <releases>
++    <release version="3.34.0" date="2019-09-26" />
+     <release version="3.32.0" date="2019-03-11" />
+   </releases>
+   <launchable type="desktop-id">org.gnome.Mahjongg.desktop</launchable>
