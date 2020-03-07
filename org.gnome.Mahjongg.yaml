@@ -15,10 +15,9 @@ modules:
   - name: gnome-mahjongg
     buildsystem: meson
     sources:
-        - type: git
-          url: https://gitlab.gnome.org/GNOME/gnome-mahjongg.git
-          tag: '3.34.0'
-          commit: '8e63b5b86219151246a69a7e839d54d73028098a'
+        - type: archive
+          url: https://download.gnome.org/sources/gnome-mahjongg/3.36/gnome-mahjongg-3.36.1.tar.xz
+          sha256: 'ed7758cf77cc7d8ec27459a415a842ab56b3ad371547e1cd58ea825c5529b0a8'
         - type: patch
           path: fe6baaead0ca0ba6ff4d600dc469398ed5b0f642.diff
 cleanup:
