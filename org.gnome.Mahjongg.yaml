@@ -6,7 +6,7 @@ command: gnome-mahjongg
 
 finish-args:
   - --share=ipc
-  - --socket=x11
+  - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
   - --metadata=X-DConf=migrate-path=/org/gnome/Mahjongg/
