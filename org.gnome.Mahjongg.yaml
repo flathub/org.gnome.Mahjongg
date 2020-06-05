@@ -11,13 +11,13 @@ finish-args:
   - --device=dri
   - --metadata=X-DConf=migrate-path=/org/gnome/Mahjongg/
 
+cleanup:
+  - "/share/man"
+
 modules:
   - name: gnome-mahjongg
     buildsystem: meson
     sources:
-        - type: git
-          url: https://gitlab.gnome.org/GNOME/gnome-mahjongg.git
-          tag: '3.36.1'
-          commit: 'f6e87bf3122b58b8a850337765010dd083f5de36'
-cleanup:
-  - "/share/man"
+        - type: archive
+          url: https://download.gnome.org/sources/gnome-mahjongg/3.36/gnome-mahjongg-3.36.2.tar.xz
+          sha256: 'd2e8f1563ee03d112a17042c4e99971295b36f3ba795c7d905d636cc94b8ae97'
