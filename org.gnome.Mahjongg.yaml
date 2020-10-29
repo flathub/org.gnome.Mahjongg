@@ -17,6 +17,9 @@ cleanup:
 modules:
   - name: gnome-mahjongg
     buildsystem: meson
+    config-opts:
+      - -Dcompile-schemas=enabled
+      - -Dupdate-icon-cache=enabled
     sources:
         - type: archive
           url: https://download.gnome.org/sources/gnome-mahjongg/3.38/gnome-mahjongg-3.38.2.tar.xz
