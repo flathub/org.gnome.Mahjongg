@@ -1,7 +1,7 @@
 app-id: org.gnome.Mahjongg
 runtime: org.gnome.Platform
 sdk: org.gnome.Sdk
-runtime-version: '42'
+runtime-version: '43'
 command: gnome-mahjongg
 
 finish-args:
@@ -17,10 +17,7 @@ cleanup:
 modules:
   - name: gnome-mahjongg
     buildsystem: meson
-    config-opts:
-      - -Dcompile-schemas=enabled
-      - -Dupdate-icon-cache=enabled
     sources:
-        - type: archive
-          url: https://download-fallback.gnome.org/sources/gnome-mahjongg/3.38/gnome-mahjongg-3.38.3.tar.xz
-          sha256: d2b1e47d85852048b35d89e3ddaba1daeb06aaf97acfb67a501ce664ff509190
+      - type: git
+        url: https://gitlab.gnome.org/GNOME/gnome-mahjongg.git
+        commit: 8abe968d15763e069904435468047202df9d9625
