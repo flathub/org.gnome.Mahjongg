@@ -1,0 +1,19 @@
+--- gnome-mahjongg/data/meson.build-orig	2023-03-24 14:36:35.412273614 -0400
++++ gnome-mahjongg/data/meson.build	2023-03-24 14:37:03.695726312 -0400
+@@ -22,7 +22,6 @@
+ install_data ('edu_kang_xi.png', install_dir: join_paths (pkgdatadir, 'themes'))
+ 
+ desktop_file = i18n.merge_file (
+-  'desktop-file',
+   input:       'org.gnome.Mahjongg.desktop.in',
+   output:      'org.gnome.Mahjongg.desktop',
+   install:     true,
+@@ -42,7 +41,7 @@
+   )
+ endif
+ 
+-appdata_file = i18n.merge_file ('appdata-file',
++appdata_file = i18n.merge_file (
+                  input: 'org.gnome.Mahjongg.appdata.xml.in',
+                  output: 'org.gnome.Mahjongg.appdata.xml',
+                  install: true,
