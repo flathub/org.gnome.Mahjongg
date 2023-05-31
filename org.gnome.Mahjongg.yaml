@@ -17,12 +17,7 @@ cleanup:
 modules:
   - name: gnome-mahjongg
     buildsystem: meson
-    config-opts:
-      - -Dcompile-schemas=enabled
-      - -Dupdate-icon-cache=enabled
     sources:
         - type: archive
-          url: https://download-fallback.gnome.org/sources/gnome-mahjongg/3.38/gnome-mahjongg-3.38.3.tar.xz
-          sha256: d2b1e47d85852048b35d89e3ddaba1daeb06aaf97acfb67a501ce664ff509190
-        - type: patch
-          path: mahjongg-meson.patch
+          url: https://download-fallback.gnome.org/sources/gnome-mahjongg/3.40/gnome-mahjongg-3.40.0.tar.xz
+          sha256: 5a8ac86d763c5660dd9025f7bc08310b922346fa7e2df7b648c9894dae3f183f
