@@ -19,9 +19,5 @@ modules:
     buildsystem: meson
     sources:
         - type: archive
-          url: https://download-fallback.gnome.org/sources/gnome-mahjongg/3.38/gnome-mahjongg-3.38.3.tar.xz
-          sha256: d2b1e47d85852048b35d89e3ddaba1daeb06aaf97acfb67a501ce664ff509190
-        - type: patch
-          path: mahjongg-meson.patch
-        - type: patch
-          path: mahjongg-select-tile.patch
+          url: https://download-fallback.gnome.org/sources/gnome-mahjongg/3.40/gnome-mahjongg-3.40.1.tar.xz
+          sha256: 8ed54eecade36b08336906fd8e6c902a0d6f7bbbbb67653c23956a6b631223f6
