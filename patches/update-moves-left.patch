@@ -1,0 +1,41 @@
+From 5b7c5891b38e973331bdb8e528fe3f1226094d8a Mon Sep 17 00:00:00 2001
+From: Mat <mail@mathias.is>
+Date: Thu, 10 Aug 2023 23:41:58 +0300
+Subject: [PATCH] gnome-mahjongg: update 'moves left' on tile match and restart
+
+The 'clock' and 'moves left' labels were combined into a single subtitle in
+the GTK 4 port, but the code to update the 'moves left' label was removed
+from update_ui() by mistake.
+
+Part-of: <https://gitlab.gnome.org/GNOME/gnome-mahjongg/-/merge_requests/37>
+---
+ src/gnome-mahjongg.vala | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/gnome-mahjongg.vala b/src/gnome-mahjongg.vala
+index 08a47ad..a104895 100644
+--- a/src/gnome-mahjongg.vala
++++ b/src/gnome-mahjongg.vala
+@@ -130,6 +130,9 @@ public class Mahjongg : Adw.Application
+             undo_action.set_enabled (game_view.game.can_undo);
+             redo_action.set_enabled (game_view.game.can_redo);
+         }
++
++        /* Update clock/moves left label */
++        tick_cb ();
+     }
+ 
+     private void conf_value_changed_cb (Settings settings, string key)
+@@ -459,9 +462,6 @@ public class Mahjongg : Adw.Application
+ 
+         update_ui ();
+ 
+-        /* Update clock label */
+-        tick_cb ();
+-
+         /* Reset the pause button in case it was set to resume */
+         window.unpause ();
+     }
+-- 
+GitLab
+
