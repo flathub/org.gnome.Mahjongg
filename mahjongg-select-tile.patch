@@ -1,0 +1,22 @@
+diff --git a/src/game-view.vala b/src/game-view.vala
+index 91e8582..58122b2 100644
+--- a/src/game-view.vala
++++ b/src/game-view.vala
+@@ -287,7 +287,7 @@ public class GameView : Gtk.DrawingArea
+             return false;
+ 
+         /* Get the tile under the square */
+-        var tile = find_tile ((uint) event.x, (uint) event.y);
++        var tile = find_tile (event.x, event.y);
+ 
+         /* If not a valid tile then ignore the event */
+         if (tile == null || !game.tile_can_move (tile))
+@@ -325,7 +325,7 @@ public class GameView : Gtk.DrawingArea
+         return false;
+     }
+ 
+-    private Tile? find_tile (uint x, uint y)
++    private Tile? find_tile (double x, double y)
+     {
+         /* Render a 1x1 image where the cursor is using a different color for each tile */
+         var surface = new Cairo.ImageSurface (Cairo.Format.RGB24, 1, 1);
