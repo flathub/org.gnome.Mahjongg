@@ -1,7 +1,7 @@
-app-id: org.gnome.Mahjongg
+id: org.gnome.Mahjongg
 runtime: org.gnome.Platform
 sdk: org.gnome.Sdk
-runtime-version: '46'
+runtime-version: '47'
 command: gnome-mahjongg
 
 finish-args:
@@ -19,5 +19,5 @@ modules:
     buildsystem: meson
     sources:
         - type: archive
-          url: https://download-fallback.gnome.org/sources/gnome-mahjongg/3.40/gnome-mahjongg-3.40.1.tar.xz
-          sha256: 8ed54eecade36b08336906fd8e6c902a0d6f7bbbbb67653c23956a6b631223f6
+          url: https://download.gnome.org/sources/gnome-mahjongg/47/gnome-mahjongg-47.0.tar.xz
+          sha256: 58f157f0bc5ec71ab8da35dce7e73ca2e8192c5b2f219167a926930b971da49b
