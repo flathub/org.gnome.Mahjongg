@@ -19,5 +19,5 @@ modules:
     buildsystem: meson
     sources:
         - type: archive
-          url: https://download.gnome.org/sources/gnome-mahjongg/47/gnome-mahjongg-47.0.tar.xz
-          sha256: 58f157f0bc5ec71ab8da35dce7e73ca2e8192c5b2f219167a926930b971da49b
+          url: https://download.gnome.org/sources/gnome-mahjongg/47/gnome-mahjongg-47.1.tar.xz
+          sha256: aae90adf1c35741437c443abc77e1ced68c20f1452dbbbd783dcb400ca2e02b0
