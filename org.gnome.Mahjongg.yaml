@@ -1,7 +1,7 @@
 id: org.gnome.Mahjongg
 runtime: org.gnome.Platform
 sdk: org.gnome.Sdk
-runtime-version: '47'
+runtime-version: '48'
 command: gnome-mahjongg
 
 finish-args:
@@ -9,7 +9,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
-  - --metadata=X-DConf=migrate-path=/org/gnome/Mahjongg/
 
 cleanup:
   - "/share/man"
@@ -19,5 +18,8 @@ modules:
     buildsystem: meson
     sources:
         - type: archive
-          url: https://download.gnome.org/sources/gnome-mahjongg/47/gnome-mahjongg-47.2.tar.xz
-          sha256: 35df926419f37826380a3346207563cd87c7e99a13debe0e93a1409d85cc6157
+          url: https://download.gnome.org/sources/gnome-mahjongg/48/gnome-mahjongg-48.0.tar.xz
+          sha256: aeb16f4c940bdb6a670c7d9acdd50dd0ec20b321bd7075a985891fbbebcd4fed
+          x-checker-data:
+            type: gnome
+            name: gnome-mahjongg
