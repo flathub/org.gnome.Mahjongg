@@ -11,15 +11,15 @@ finish-args:
   - --device=dri
 
 cleanup:
-  - "/share/man"
+  - /share/man
 
 modules:
   - name: gnome-mahjongg
     buildsystem: meson
     sources:
-        - type: archive
-          url: https://download.gnome.org/sources/gnome-mahjongg/48/gnome-mahjongg-48.0.tar.xz
-          sha256: aeb16f4c940bdb6a670c7d9acdd50dd0ec20b321bd7075a985891fbbebcd4fed
-          x-checker-data:
-            type: gnome
-            name: gnome-mahjongg
+      - type: archive
+        url: https://download.gnome.org/sources/gnome-mahjongg/48/gnome-mahjongg-48.1.tar.xz
+        sha256: dd48e0f81aca34beada46c5d221b32591b8ed81e9d361c3a258df9f6b2222c84
+        x-checker-data:
+          type: gnome
+          name: gnome-mahjongg
