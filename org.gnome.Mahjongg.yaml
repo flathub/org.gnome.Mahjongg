@@ -1,7 +1,7 @@
 id: org.gnome.Mahjongg
 runtime: org.gnome.Platform
 sdk: org.gnome.Sdk
-runtime-version: '48'
+runtime-version: '49'
 command: gnome-mahjongg
 
 finish-args:
@@ -18,8 +18,8 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/gnome-mahjongg/48/gnome-mahjongg-48.1.tar.xz
-        sha256: dd48e0f81aca34beada46c5d221b32591b8ed81e9d361c3a258df9f6b2222c84
+        url: https://download.gnome.org/sources/gnome-mahjongg/49/gnome-mahjongg-49.0.tar.xz
+        sha256: 0fda603205c3485a1114f57ec6871bb951ed92620613981b767096e91f9142d4
         x-checker-data:
           type: gnome
           name: gnome-mahjongg
