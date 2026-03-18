@@ -1,7 +1,7 @@
 id: org.gnome.Mahjongg
 runtime: org.gnome.Platform
 sdk: org.gnome.Sdk
-runtime-version: '49'
+runtime-version: '50'
 command: gnome-mahjongg
 
 finish-args:
