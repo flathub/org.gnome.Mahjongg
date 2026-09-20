@@ -18,8 +18,8 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/gnome-mahjongg/51/gnome-mahjongg-51.0.tar.xz
-        sha256: 8389a824af7b5eae92d6c9c62ea9fde1527f880c10fe51246d38beec31b8c288
+        url: https://download.gnome.org/sources/gnome-mahjongg/51/gnome-mahjongg-51.1.tar.xz
+        sha256: 2ef9a1cd246d8ccc9ccd27fa435f972a81def9cf3eccc4c880cbb8929ffb8821
         x-checker-data:
           type: gnome
           name: gnome-mahjongg
